@@ -1,10 +1,18 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React, {Component} from 'react';
+import './App.css';
+import Header from './Header';
+import Body from './Body';
 
-function App() {
-  return (
-    <h1 className="text-3xl font-bold underline bg-red-400">Hello world!</h1>
-  );
+class App extends Component  {
+
+  render(){
+    return (
+      <div>
+        <Header />
+        <Body />  
+      </div>
+    );
+  }
 }
 
 export default App;
